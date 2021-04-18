@@ -15,7 +15,8 @@ html {
 body {
     width: 100%;
     height: 100%;
-    /* background-image: url(""); */
+    background-image: url("../img/sitebg.jpg");
+    background-size: cover;
 }
 
 a {
@@ -31,3 +32,369 @@ p {
 img {
     width: 100%;
 }
+
+.container {
+    width: 90%;
+    max-width: 1200;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.section-heading h1 {
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255, .3);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin: 10rem 0 1rem 0;
+}
+
+.section-heading h6 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.margin {
+    margin-right: 5rem;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top-nav {
+    background-color: #16162d;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.Landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.Landing-text h1 {
+    font-size: 8rem;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+.Landing-text h6 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* About */
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-heading {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+    font-size: 4rem;
+    opacity: .3;
+}
+
+.about-heading h6 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.profile-img {
+    flex: 1;
+    margin-right: 5rem;
+}
+
+.about-details {
+    flex: 1;
+}
+
+.social-media {
+    margin-top: 3rem;
+}
+
+.icon-link {
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.social-media i {
+    font-size: 5rem;
+    transition: color 650ms;
+}
+
+.fb:hover {
+    color: #4267b2;
+}
+
+.ig:hover {
+    color: #8a3ab9;
+}
+
+.tw:hover {
+    color: #38a1f3;
+}
+.git:hover {
+    color: #4078c0;
+}
+.in:hover {
+    color: #0077b5;
+}
+
+/* skills */
+
+.my-skills {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.skill h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+    padding-top: 2rem;
+}
+
+.icon-container {
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #ffe838;
+    background-color: #fd57bf;
+    margin: 0 25rem 0;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+.icon-container ion-icon {
+    color: #ffe838;
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+
+/* portfolio */
+
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-img {
+    width: 50rem;
+    flex: 1;
+}
+.portfolio-description {
+    flex: 1;
+}
+
+.portfolio-description h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 1rem 0;
+}
+
+.portfolio-description h6 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: .3;
+}
+
+.portfolio-description .cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+}
+
+.portfolio-description .cta:hover {
+    color: #2f67cd;
+} 
+
+/* timeline */
+
+.timeline ul {
+    border-left: 4px solid #ffe838;
+    border-radius: .8rem;
+    background-color: rgb(0, 0, 0, .05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+}
+
+.timeline h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: .3;
+}
+
+.timeline .date {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline .date:last-of-type {
+    border-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.timeline .date::before {
+    content: attr(data-date);
+    left: -14rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+
+.timeline .date::after {
+    content: '';
+    box-shadow: 0 0 0 4px #fd57bf;
+    border-radius: 100%;
+    left: -5.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #313534;
+}
+
+/* contact */
+
+.contact {
+    background-color: #221e3f;
+}
+
+form {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+form label {
+    font-size: 1.5rem;
+}
+
+input, 
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: #fd57bf;
+}
+
+input[type="submit"] {
+    width: initial;
+    background-color: #fd57bf;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+    color: #221e3f;
+    background-color: #ffe838;
+}
+
+/* footer */
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up ion-icon {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+   display: flex;
+}
+
+
+
